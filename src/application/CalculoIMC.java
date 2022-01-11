@@ -1,4 +1,6 @@
 package application;
+import entitye.PessoaImc;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -18,6 +20,7 @@ public class CalculoIMC {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner entrada = new Scanner(System.in);
+		PessoaImc pessoa;
 		
 		System.out.print("Digite seu peso.....: ");
 		double peso = entrada.nextDouble();
@@ -26,8 +29,8 @@ public class CalculoIMC {
 		System.out.print("Digite sua Altura...: ");
 		double altura = entrada.nextDouble();
 		
-		double imc = peso / (altura * altura);
-		System.out.printf("Seu IMC.............: %.2f%n" , imc);
+		pessoa = new PessoaImc(peso, altura);
 		
+		System.out.println(pessoa);
 	}
 }
