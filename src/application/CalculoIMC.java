@@ -1,8 +1,8 @@
 package application;
-import entitye.PessoaImc;
-
 import java.util.Locale;
 import java.util.Scanner;
+
+import entity.PessoaImc;
 
 /**
  * Essa classe � util para fazer o c�lculo do IMC

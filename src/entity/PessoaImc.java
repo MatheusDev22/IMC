@@ -1,4 +1,4 @@
-package entitye;
+package entity;
 
 public class PessoaImc {
 
